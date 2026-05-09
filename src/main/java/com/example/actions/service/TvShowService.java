@@ -18,4 +18,8 @@ public class TvShowService {
     public List<TvShow> getAllTvShows() {
         return tvShowRepository.findAll();
     }
+
+    public TvShow getShow(Long id){
+        return tvShowRepository.findById(id).get();
+    }
 }
